@@ -1,8 +1,7 @@
 ﻿using System;
 using System.IO;
-using Microsoft.Win32;
 using WinSpotlightWallpaperSetter.Extensions;
-using WinSpotlightWallpaperSetter.Functions;
+using WinSpotlightWallpaperSetter.Logic;
 using WinSpotlightWallpaperSetter.Model;
 using static WinSpotlightWallpaperSetter.Extensions.ConsoleExtensions;
 
@@ -17,9 +16,7 @@ namespace WinSpotlightWallpaperSetter
         private const int ImageWidth  = 1920;
         private const int ImageHeight = 1080;
         private const int MinFileSize = 200 * 1024;
-        private const string CurentLockScreenRegistryPath =
-            @"HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Lock Screen\Creative";
-
+        
         private static void Main(string[] args)
         {
             if (args.Contains(Commands.Hide))
@@ -55,10 +52,9 @@ namespace WinSpotlightWallpaperSetter
                 Console.WriteLine($"Images copied.");
             }
 
-            if (args.Contains(Commands.Set) &&
-                Registry.GetValue(CurentLockScreenRegistryPath, "LandscapeAssetPath", null) is string lockScreenPath)
+            if (args.Contains(Commands.Set))
             {
-                File.Copy(lockScreenPath, TempWallpaperPath, true);
+                File.Copy(Lockscreen.GetLocalPath(), TempWallpaperPath, true);
                 Wallpaper.Set(TempWallpaperPath);
                 Console.WriteLine($"Wallpaper set.");
             }

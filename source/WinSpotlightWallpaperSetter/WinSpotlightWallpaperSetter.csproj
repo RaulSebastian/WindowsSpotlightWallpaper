@@ -49,13 +49,14 @@
   <ItemGroup>
     <Compile Include="Extensions\BitmapExtentsions.cs" />
     <Compile Include="Extensions\ConsoleExtensions.cs" />
-    <Compile Include="Functions\Filesystem.cs" />
+    <Compile Include="Logic\Filesystem.cs" />
+    <Compile Include="Logic\Lockscreen.cs" />
     <Compile Include="Model\ColoredOutput.cs" />
     <Compile Include="Model\Commands.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Resolution.cs" />
-    <Compile Include="Functions\Wallpaper.cs" />
+    <Compile Include="Logic\Wallpaper.cs" />
     <Compile Include="Extensions\StringExt.cs" />
   </ItemGroup>
   <ItemGroup />

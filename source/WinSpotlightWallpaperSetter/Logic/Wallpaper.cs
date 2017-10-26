@@ -2,7 +2,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace WinSpotlightWallpaperSetter.Functions
+namespace WinSpotlightWallpaperSetter.Logic
 {
     public static class Wallpaper
     {

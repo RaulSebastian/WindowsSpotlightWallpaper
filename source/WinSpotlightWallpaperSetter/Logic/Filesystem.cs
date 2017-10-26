@@ -5,7 +5,7 @@ using System.Linq;
 using WinSpotlightWallpaperSetter.Extensions;
 using WinSpotlightWallpaperSetter.Model;
 
-namespace WinSpotlightWallpaperSetter.Functions
+namespace WinSpotlightWallpaperSetter.Logic
 {
     public static class Filesystem
     {
