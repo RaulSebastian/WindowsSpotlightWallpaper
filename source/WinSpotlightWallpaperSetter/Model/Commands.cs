@@ -2,6 +2,6 @@
 {
     public enum Commands
     {
-        Help, Copy, Set
+        Help, Copy, Set, Hide
     }
 }

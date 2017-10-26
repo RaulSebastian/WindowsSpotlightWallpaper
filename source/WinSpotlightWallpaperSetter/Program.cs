@@ -22,6 +22,11 @@ namespace WinSpotlightWallpaperSetter
 
         private static void Main(string[] args)
         {
+            if (args.Contains(Commands.Hide))
+            {
+                Hide();
+            }
+
             if (args.Contains(Commands.Help) || args.Length == 0)
             {
                 WriteColored(
@@ -33,6 +38,9 @@ namespace WinSpotlightWallpaperSetter
                     ColoredOutput(Environment.NewLine),
                     ColoredOutput("   set ", ConsoleColor.Yellow),
                     ColoredOutput(" - sets the wallpaper to the current lock screen"),
+                    ColoredOutput(Environment.NewLine),
+                    ColoredOutput("   hide", ConsoleColor.Yellow),
+                    ColoredOutput(" - runs the console hidden"),
                     ColoredOutput(Environment.NewLine),
                     ColoredOutput("   help", ConsoleColor.Yellow),
                     ColoredOutput(" - shows the available commands and description"),
@@ -55,9 +63,9 @@ namespace WinSpotlightWallpaperSetter
                 Console.WriteLine($"Wallpaper set.");
             }
 
-            if (args.Contains(Commands.Help) || args.Length == 0)
+            if ((args.Contains(Commands.Help) && !args.Contains(Commands.Hide)) || args.Length == 0)
             {
-                WriteColored(ColoredOutput("Press any key to exit.", ConsoleColor.Gray));
+                WriteColored(ColoredOutput("Press any key to exit.", ConsoleColor.DarkGray));
                 Console.ReadKey();
             }
         }
