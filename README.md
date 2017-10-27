@@ -37,7 +37,7 @@ _One possible trigger that should cover setting the wallpaper whenever the spotl
 
 ![Windows shortcut example](https://github.com/RaulSebastian/WinSpotlightWallpaperSetter/blob/master/documentation/assets/winSchedulerTrigger.png)
 
-You can also use reocuring schedules or combine different trigger. 
+You can also use reocuring schedules or combine different triggers. 
 
 Another possible usage would be to schedule the app for **copy** only and use a slideshow as windows background, referencing the copy outputfolder ```C:\Users\[current]\Pictures\Spotlight```. Right now, there is no option to change the output folder, yet it is a planed feature.
 
