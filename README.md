@@ -1,5 +1,4 @@
 # Windows Spotlight Wallpaper
-
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
 
