@@ -1,4 +1,4 @@
-# Windows Spotlight Wallpaper Setter
+# Windows Spotlight Wallpaper
 
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
@@ -13,9 +13,9 @@ If you enjoy the windows spotlight images and would like to have a copy of the p
 ## How To Use
 
 You can either run the application manually or schedule it, for example using the windows task scheduler.
-The app takes arguments in order to do anything. Currently you can use **copy**, **set** and **help**.
+The app takes arguments in order to do anything. Currently you can use **copy**, **set**, **hide** and **help**.
 
-For a complete list of available options, refer to the wiki or run the app with the argument help:
+For a complete list of available options, refer to the wiki or run the app with using **help**:
 ```PowerShell
 C:\Projects\WinSpotlightWallpaperSetter>.\WinSpotlightWallpaperSetter.exe help
 ```
@@ -31,20 +31,20 @@ _Example for a shortcute using arguments:_
 
 #### Schedule using the windows task scheduler
 
-Open the windows scheduler and a basic task with the action to start a program. Dont forget to add the arguments.
+Open the windows scheduler and a basic task with the action to start a program. Dont forget to add the arguments. Use **hide** as one of the arguments to run silently and not bother you every time it runs.
 
 _One possible trigger that should cover setting the wallpaper whenever the spotlight changes:_
 
 ![Windows shortcut example](https://github.com/RaulSebastian/WinSpotlightWallpaperSetter/blob/master/documentation/assets/winSchedulerTrigger.png)
 
-You can also use reocuring schedules or combine different trigger. 
+You can also use reocuring schedules or combine different triggers. 
 
 Another possible usage would be to schedule the app for **copy** only and use a slideshow as windows background, referencing the copy outputfolder ```C:\Users\[current]\Pictures\Spotlight```. Right now, there is no option to change the output folder, yet it is a planed feature.
 
 
 ## Download
 
-You can [download](https://github.com/RaulSebastian/WinSpotlightWallpaperSetter/releases/tag/v1.0.0) latest version for Windows 10.
+You can [download](https://github.com/RaulSebastian/WinSpotlightWallpaperSetter/releases/tag/v1.1.0) latest version for Windows 10.
 
 
 ## Build from source 
@@ -59,7 +59,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild "C:\Projects\WinSpotlightW
 
 ## Contribute
 
-Feel free to send pull requests or fork this. 
+Feel free to clone, send pull requests or fork this repository.
 
 
 ## License
