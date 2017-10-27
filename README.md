@@ -1,4 +1,4 @@
-# Windows Spotlight Wallpaper Setter
+# Windows Spotlight Wallpaper
 
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
@@ -59,7 +59,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild "C:\Projects\WinSpotlightW
 
 ## Contribute
 
-Feel free to send pull requests or fork this. 
+Feel free to clone, send pull requests or fork this repository.
 
 
 ## License
