@@ -1,11 +1,10 @@
 ﻿using System;
 using System.IO;
-using WinSpotlightWallpaperSetter.Extensions;
-using WinSpotlightWallpaperSetter.Logic;
-using WinSpotlightWallpaperSetter.Model;
-using static WinSpotlightWallpaperSetter.Extensions.ConsoleExtensions;
+using WindowsSpotlightWallpaper.Extensions;
+using WindowsSpotlightWallpaper.Logic;
+using WindowsSpotlightWallpaper.Model;
 
-namespace WinSpotlightWallpaperSetter
+namespace WindowsSpotlightWallpaper
 {
     class Program
     {
@@ -21,27 +20,27 @@ namespace WinSpotlightWallpaperSetter
         {
             if (args.Contains(Commands.Hide))
             {
-                Hide();
+                ConsoleExtensions.Hide();
             }
 
             if (args.Contains(Commands.Help) || args.Length == 0)
             {
-                WriteColored(
-                    ColoredOutput("Run the executable wih any combination of the following commands:",
+                ConsoleExtensions.WriteColored(
+                    ConsoleExtensions.ColoredOutput("Run the executable wih any combination of the following commands:",
                         ConsoleColor.White),
-                    ColoredOutput(Environment.NewLine),
-                    ColoredOutput("   copy", ConsoleColor.Yellow),
-                    ColoredOutput(" - copy cached spotlight images to myPictures\\Spotlight folder"),
-                    ColoredOutput(Environment.NewLine),
-                    ColoredOutput("   set ", ConsoleColor.Yellow),
-                    ColoredOutput(" - sets the wallpaper to the current lock screen"),
-                    ColoredOutput(Environment.NewLine),
-                    ColoredOutput("   hide", ConsoleColor.Yellow),
-                    ColoredOutput(" - runs the console hidden"),
-                    ColoredOutput(Environment.NewLine),
-                    ColoredOutput("   help", ConsoleColor.Yellow),
-                    ColoredOutput(" - shows the available commands and description"),
-                    ColoredOutput(Environment.NewLine)
+                    ConsoleExtensions.ColoredOutput(Environment.NewLine),
+                    ConsoleExtensions.ColoredOutput("   copy", ConsoleColor.Yellow),
+                    ConsoleExtensions.ColoredOutput(" - copy cached spotlight images to myPictures\\Spotlight folder"),
+                    ConsoleExtensions.ColoredOutput(Environment.NewLine),
+                    ConsoleExtensions.ColoredOutput("   set ", ConsoleColor.Yellow),
+                    ConsoleExtensions.ColoredOutput(" - sets the wallpaper to the current lock screen"),
+                    ConsoleExtensions.ColoredOutput(Environment.NewLine),
+                    ConsoleExtensions.ColoredOutput("   hide", ConsoleColor.Yellow),
+                    ConsoleExtensions.ColoredOutput(" - runs the console hidden"),
+                    ConsoleExtensions.ColoredOutput(Environment.NewLine),
+                    ConsoleExtensions.ColoredOutput("   help", ConsoleColor.Yellow),
+                    ConsoleExtensions.ColoredOutput(" - shows the available commands and description"),
+                    ConsoleExtensions.ColoredOutput(Environment.NewLine)
                 );
             }
 
@@ -61,7 +60,7 @@ namespace WinSpotlightWallpaperSetter
 
             if ((args.Contains(Commands.Help) && !args.Contains(Commands.Hide)) || args.Length == 0)
             {
-                WriteColored(ColoredOutput("Press any key to exit.", ConsoleColor.DarkGray));
+                ConsoleExtensions.WriteColored(ConsoleExtensions.ColoredOutput("Press any key to exit.", ConsoleColor.DarkGray));
                 Console.ReadKey();
             }
         }

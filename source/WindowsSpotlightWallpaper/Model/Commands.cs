@@ -1,4 +1,4 @@
-﻿namespace WinSpotlightWallpaperSetter.Model
+﻿namespace WindowsSpotlightWallpaper.Model
 {
     public enum Commands
     {

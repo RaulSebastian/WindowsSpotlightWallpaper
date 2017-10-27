@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 
-namespace WinSpotlightWallpaperSetter.Extensions
+namespace WindowsSpotlightWallpaper.Extensions
 {
     public static class BitmapExtentsions
     {

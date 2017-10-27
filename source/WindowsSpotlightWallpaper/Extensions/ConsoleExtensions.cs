@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using WinSpotlightWallpaperSetter.Model;
+using WindowsSpotlightWallpaper.Model;
 
-namespace WinSpotlightWallpaperSetter.Extensions
+namespace WindowsSpotlightWallpaper.Extensions
 {
     public static class ConsoleExtensions
     {

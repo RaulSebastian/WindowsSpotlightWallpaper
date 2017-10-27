@@ -2,10 +2,10 @@
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using WinSpotlightWallpaperSetter.Extensions;
-using WinSpotlightWallpaperSetter.Model;
+using WindowsSpotlightWallpaper.Extensions;
+using WindowsSpotlightWallpaper.Model;
 
-namespace WinSpotlightWallpaperSetter.Logic
+namespace WindowsSpotlightWallpaper.Logic
 {
     public static class Filesystem
     {

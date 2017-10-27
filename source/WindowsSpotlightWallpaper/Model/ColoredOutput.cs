@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WinSpotlightWallpaperSetter.Model
+namespace WindowsSpotlightWallpaper.Model
 {
     public struct ColoredOutput
     {

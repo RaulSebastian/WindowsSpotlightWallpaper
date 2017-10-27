@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
 
-namespace WinSpotlightWallpaperSetter.Logic
+namespace WindowsSpotlightWallpaper.Logic
 {
     public static class Lockscreen
     {
