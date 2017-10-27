@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 
@@ -41,6 +42,23 @@ namespace WinSpotlightWallpaperSetter.Extensions
             comparedImg.UnlockBits(comparedData);
 
             return result;
+        }
+
+        public static Image ConvertToImage(string pathToFile)
+        {
+            Image image;
+
+            try
+            {
+                image = Image.FromFile(pathToFile);
+            }
+            catch (Exception)
+            {
+                //error converting file to image returns null
+                return null;
+            }
+
+            return image;
         }
     }
 }

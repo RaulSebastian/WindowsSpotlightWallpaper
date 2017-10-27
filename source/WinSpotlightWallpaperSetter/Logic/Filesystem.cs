@@ -26,17 +26,10 @@ namespace WinSpotlightWallpaperSetter.Logic
                 if (new FileInfo(filepath).Length < minFileSize)
                     continue;
 
-                Image image;
+                var image = BitmapExtentsions.ConvertToImage(filepath);
 
-                try
-                {
-                    image = Image.FromFile(filepath);
-                }
-                catch (Exception)
-                {
-                    //error while converting file to image is ignored / no handling intended
+                if(image == null)
                     continue;
-                }
 
                 if (image.Size.Width != matchingResolution.Width || image.Size.Height != matchingResolution.Height)
                     continue;
