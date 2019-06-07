@@ -6,7 +6,5 @@ solution: source/WindowsSpotlightWallpaper.sln
 addons:
   sonarcloud:
     organization: "raulsebastian-github"
-    token:
-      secure: "%SonarToken%"
 script:
   - sonar-scanner
