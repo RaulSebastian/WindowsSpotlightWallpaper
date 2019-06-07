@@ -1,8 +1,9 @@
-# Windows Spotlight Wallpaper
+# Windows Spotlight Wallpaper 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper.svg?branch=master)](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper)
 [![CircleCI](https://circleci.com/gh/RaulSebastian/WindowsSpotlightWallpaper.svg?style=svg)](https://circleci.com/gh/RaulSebastian/WindowsSpotlightWallpaper)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=RaulSebastian_WindowsSpotlightWallpaper&metric=alert_status)](https://sonarcloud.io/dashboard?id=RaulSebastian_WindowsSpotlightWallpaper)
 
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
@@ -73,4 +74,8 @@ Feel free to clone, send pull requests or fork this repository.
 
 ## Credits
 
-This software uses .NET native labraries only. 
+This software uses .NET native labraries only.
+
+![ReSharper](documentation/assets/ReSharper-Icon.png)
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=RaulSebastian_WindowsSpotlightWallpaper)
