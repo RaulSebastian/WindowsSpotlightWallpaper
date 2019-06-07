@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Net.Mime;
 using WindowsSpotlightWallpaper.Extensions;
 using WindowsSpotlightWallpaper.Model;
 
@@ -37,7 +36,7 @@ namespace WindowsSpotlightWallpaper.Logic
 
                 var fileAlreadyInDestination = !firstLoad && Directory.EnumerateFiles(destinationPath)
                                                    .Any(existingImages => ((Bitmap) image).Compare(
-                                                       (Bitmap) MediaTypeNames.Image.FromFile(existingImages)));
+                                                       (Bitmap) Image.FromFile(existingImages)));
 
                 if (fileAlreadyInDestination)
                     continue;

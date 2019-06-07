@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Net.Mime;
 using System.Runtime.InteropServices;
 
 namespace WindowsSpotlightWallpaper.Extensions
@@ -18,7 +17,7 @@ namespace WindowsSpotlightWallpaper.Extensions
             if (originalImg == null || comparedImg == null)
                 return false;
             
-            var bytes = originalImg.Width * originalImg.Height * (MediaTypeNames.Image.GetPixelFormatSize(originalImg.PixelFormat) / 8);
+            var bytes = originalImg.Width * originalImg.Height * (Image.GetPixelFormatSize(originalImg.PixelFormat) / 8);
 
             var result = true;
             var originalBytes = new byte[bytes];
@@ -45,13 +44,13 @@ namespace WindowsSpotlightWallpaper.Extensions
             return result;
         }
 
-        public static MediaTypeNames.Image ConvertToImage(string pathToFile)
+        public static Image ConvertToImage(string pathToFile)
         {
-            MediaTypeNames.Image image;
+            Image image;
 
             try
             {
-                image = MediaTypeNames.Image.FromFile(pathToFile);
+                image = Image.FromFile(pathToFile);
             }
             catch (Exception)
             {

@@ -8,7 +8,7 @@ namespace WindowsSpotlightWallpaper
 {
     class Program
     {
-        private static readonly string SourcePath = Path.Combine(Environment.GetEnvironmentVariable("LocalAppData"),"Packages", "Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy", "LocalState", "Assets");
+        private static readonly string SourcePath = $@"{Environment.GetEnvironmentVariable("LocalAppData")}\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets";
         private static readonly string DestinationPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures),"Spotlight");
         private static readonly string TempWallpaperPath = Path.Combine(Path.GetTempPath(), "wallpaper.jpg");
 
@@ -48,7 +48,7 @@ namespace WindowsSpotlightWallpaper
             {
                 Filesystem.ConvertAndCopyImages(SourcePath, DestinationPath, MinFileSize,
                     new Resolution(ImageWidth, ImageHeight));
-                Console.WriteLine("Images copied.");
+                Console.WriteLine($"Images copied.");
             }
 
             if (args.Contains(Commands.Set))
