@@ -1,4 +1,7 @@
 # Windows Spotlight Wallpaper
+
+[![Build Status](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper.svg?branch=master)](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper)
+
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
 
