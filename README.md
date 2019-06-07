@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper.svg?branch=master)](https://travis-ci.com/RaulSebastian/WindowsSpotlightWallpaper)
+[![CircleCI](https://circleci.com/gh/RaulSebastian/WindowsSpotlightWallpaper.svg?style=svg)](https://circleci.com/gh/RaulSebastian/WindowsSpotlightWallpaper)
 
 If you enjoy the windows spotlight images and would like to have a copy of the pictures locally or have the same windows background as the dynamic spotlight lockscreen, this simple tool will help you. 
 
